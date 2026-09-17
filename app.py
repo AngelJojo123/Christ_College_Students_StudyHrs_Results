@@ -12,5 +12,5 @@ if st.button("Predict"):
     st.success("Pass")
   else:
     st.error("Fail")
-st.write("Pass Probability:", round(pass_probability, 2), "%")
-st.write("Fail Probability:", round(fail_probability, 2), "%")
+  st.write("Pass Probability:", round(pass_probability, 2), "%")
+  st.write("Fail Probability:", round(fail_probability, 2), "%")
