@@ -10,7 +10,7 @@ if st.button("Predict"):
   pass_probability = probability[0][1] * 100
   if prediction[0]==1:
     st.success("✓ Pass")
+    st.write("Pass Probability:", round(pass_probability, 2), "%")
   else:
-    st.error("✗ Fail")
-  st.write("Pass Probability:", round(pass_probability, 2), "%")
-  st.write("Fail Probability:", round(fail_probability, 2), "%")
+    st.error("❌ Fail")
+    st.write("Fail Probability:", round(fail_probability, 2), "%")
